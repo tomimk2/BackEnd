@@ -47,5 +47,4 @@ console.log (usuario1.getFullName());
 console.log (pets);
 console.log(books);
 console.log(usuario1.countPets());
-console.log(usuario1.getPets());
 console.log(usuario2.getBookNames());
