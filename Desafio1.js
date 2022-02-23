@@ -12,7 +12,8 @@ class Usuario {
             
             countPets = () => this.pets.length ;
 
-            addBook = (name, autor) => this.books.push(name, autor) ;
+            addBook = (book) =>this.books.push(book);
+        
 
             getBookNames(){
                 let namesBooks =this.books.map(book=>{return book.name;});
@@ -34,11 +35,11 @@ let pets = ["homer", "coco", "biscuit"];
 let usuario1 = new Usuario("Pedro", "Pascal", books, pets);
 let usuario2 = new Usuario("Ezequiel", "Perez", books, pets)
 
-usuario1.addBook ("don quijote de la mancha", "Miguel de Cervantes");
-usuario1.addBook ("Martin Fierro", "José Hernández");
+usuario1.addBook ({name: "don quijote de la mancha", autor:"Miguel de Cervantes"});
+usuario1.addBook ({name:"Martin Fierro", autor:"José Hernández"});
 usuario1.addPet ("biscuit");
 
-usuario2.addBook("padre rico padre pobre","Robert Kiyosaki & Sharon Lechter");
+usuario2.addBook({name:"padre rico padre pobre", autor:"Robert Kiyosaki & Sharon Lechter"});
 usuario2.addPet ("coco");
 usuario2.addPet ("homer");
 
